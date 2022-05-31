@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clases.css">
+    <title>THE GAME</title>
+</head>
+<body>
+    <h1>JUEGO DE DADOS</h1>
+
+    <br><br>
+
+    <section class="conjun">
+        <br><br><br>
+        
+        <h2>Número de jugadores</h2>
+
+        <div class="in">
+            <input type="number" id="juga" size="15" required placeholder="Ingrese la cant.">
+        </div>
+        <br><br>
+        <button class="button" id="btn1">Tirar</button>
+
+
+        <br><br><br>
+        <div class="reme">
+            <div id="resultado"></div>
+        </div>
+        <div class="mere">
+            <div id="ganador"></div>
+        </div>
+
+        <script>
+                var b = document.getElementById('btn1');
+                b.addEventListener('click', calc);
+
+                function calc() {
+                        var play = parseInt(document.getElementById('juga').value);
+                        const players = [];
+                        for (let i=0;i<play;i++) {
+                            players[i] = Math.floor(Math.random() * 6) + 1;
+                        }
+                        document.getElementById("resultado").innerHTML = "Los jugadores sacan: "+players
+
+                        var max = 0;
+                        for (let i = 0; i < play; i++) {
+                            if (players[i] > max) {
+                                max = players[i];
+                            }
+                        }
+                        var cont = 0;
+
+                        for (let i = 0; i < play; i++) {
+                            if (players[i] == max) {
+                                cont++;
+                            }
+                        }
+                
+                        if (cont == 1) {
+                            document.getElementById("ganador").innerHTML = "El ganador es el jugador  con el numero: " + max
+
+                        }
+                        else if (cont > 1) {
+                            document.getElementById("ganador").innerHTML = "Hay jugadores empatados";
+                        }
+                        else if(cont < 1){
+                            document.getElementById("ganador").innerHTML = "debe haber almenos un jugador";
+                        }
+
+                }
+    </script>
+</body>
+</html>

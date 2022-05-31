@@ -1,0 +1,321 @@
+body{
+    background-color: #94632E;
+}
+
+h1{
+    font-size: 35px;
+    text-align: center;
+    border: 10px solid brown;
+    border-radius: 25px;
+    margin: 25px 35%;
+    padding: 25px;
+}
+
+h2{
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.conjun{
+    padding: 1px 30px;
+    text-align: center;
+    background-color: #B65843;
+    margin: 4% 35%; 
+    border-radius: 25px;
+    padding-bottom: 5%;
+}
+
+.in{
+    padding: 10px 15px;
+    background-color: #EE7A19;
+    margin: 0 25%;
+    border-radius: 25px;
+    box-shadow: 3px 0 2px 3px  black;
+}
+
+input[type="number"]{
+    background-color: #924126;
+    box-shadow: 3px 0 2px 3px  black;
+    font-size: 15px;
+    width:85%;
+    padding:7px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    font-family:'Montserrat',sans-serif;
+    transition:all .5s;
+    border:2px solid #4A4744;
+    border-radius: 10px;
+}
+
+input[type="number"]:hover{
+    padding: 10px 10px;
+    border-radius: 15px;
+}
+
+input[type="number"]:focus{
+    padding: 10px 10px;
+    border-radius: 20px;
+    border-color: #666;
+}
+
+button{
+    background-color: #DF882C;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    box-shadow: 3px 0 2px 3px  black;
+}
+
+button:hover{
+    color: whitesmoke;
+    background-color: #AD661A;
+    padding: 7px 25px;
+    font-size: 22px;
+}
+
+.button:active {
+    background-color: #94632E;
+    box-shadow: 1px 0 0 1px #666;
+    transform: translateY(4px);
+  }
+
+.reme{
+    background-color: #DF882C;
+    padding: 20px 25px;
+    margin: 0 25%;
+    border-radius: 25px;
+    font-size: 20px;
+}
+
+.mere{
+    background-color: #C86C4E;
+    margin: 5px 20%;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+@media screen and (max-width: 1100px) {
+    body{
+        background-color: #94632E;
+    }
+    h1{
+        border: 10px solid brown;
+        margin: 15px 15%;
+        font-size: 45px;
+    }
+
+    h2{
+        font-size: 55px;
+    }
+
+    .conjun{
+        margin: 15px 15%;
+        padding-bottom: 30px;
+    }
+
+    button{
+        background-color: #DF882C;
+        display: inline-block;
+        cursor: pointer;
+        font-size: 30px;
+        padding: 5px 20px;
+        border-radius: 10px;
+        box-shadow: 3px 0 2px 3px  black;
+    }
+    
+    button:hover{
+        color: whitesmoke;
+        background-color: #AD661A;
+        padding: 7px 25px;
+        font-size: 33px;
+    }
+    
+    .button:active {
+        background-color: #94632E;
+        box-shadow: 1px 0 0 1px #666;
+        transform: translateY(4px);
+      }
+
+    .in{
+        padding: 20px;
+        margin: 0 10%;
+    }
+
+    input[type="number"]{
+        font-size: 35px;
+    }
+    
+    .reme{
+        margin: 0 5%;
+        font-size: 35px;
+    }
+    .mere{
+        margin: 0 10%;
+        font-size: 30px;
+    }
+        
+}
+
+@media screen and (max-width: 900px) {
+    body{
+        background-color: #94632E;
+    }
+    h1{
+        border: 7px solid brown;
+        margin: 15px 20%;
+        font-size: 35px;
+    }
+
+    h2{
+        font-size: 45px;
+    }
+
+    .conjun{
+        margin: 15px 20%;
+        padding: 20px 15px;
+    }
+
+    .in{
+        padding: 15px 15px;
+        margin: 0 15%;
+    }
+
+    input[type="number"]{
+        font-size: 25px;
+    }
+    
+    .reme{
+        margin: 0 5%;
+        font-size: 25px;
+    }
+    .mere{
+        margin: 0 10%;
+        font-size: 20px;
+    }
+        
+}
+
+
+@media screen and (max-width: 700px) {
+    body{
+        background-color: #94632E;
+    }
+    h1{
+        margin: 15%;
+        font-size: 30px;
+    }
+
+    .conjun{
+        margin: 0 15%;
+        padding-bottom: 25px;
+    }
+
+    .in{
+        margin: 0 10%;
+    }
+
+    input[type="number"]{
+        font-size: 20px;
+    }
+    .reme{
+        margin: 0 15%;
+        font-size: 25px;
+    }
+    .mere{
+        font-size: 20px;
+    }
+        
+}
+
+
+@media screen and (max-width: 500px) {
+    body{
+        background-color: #94632E;
+    }
+    h1{
+        margin: 0 20%;
+        font-size: 30px;
+    }
+
+    .conjun{
+        margin: 0 10%;
+        padding-bottom: 25px;
+    }
+
+    .in{
+        margin: 10%;
+    }
+
+    input[type="number"]{
+        font-size: 15px;
+    }
+        
+}
+
+@media screen and (max-width: 300px) {
+    body{
+        background-color: #94632E;
+    }
+    h1{
+        border: 7px solid brown;
+        margin: 15%;
+        font-size: 30px;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+
+    .conjun{
+        margin: 0 5%;
+        padding-bottom: 25px;
+    }
+
+    input[type="number"]{
+        font-size: 20px;
+        margin: 0 5%;
+        padding: 2px 10px;
+    }
+
+    .in{
+        margin: 0 1%;
+        padding: 5px 10px;
+    }
+
+    button{
+        background-color: #DF882C;
+        display: inline-block;
+        cursor: pointer;
+        font-size: 20px;
+        padding: 5px 20px;
+        border-radius: 10px;
+        box-shadow: 3px 0 2px 3px  black;
+    }
+    
+    button:hover{
+        color: whitesmoke;
+        background-color: #AD661A;
+        padding: 7px 25px;
+        font-size: 23px;
+    }
+    
+    .button:active {
+        background-color: #94632E;
+        box-shadow: 1px 0 0 1px #666;
+        transform: translateY(4px);
+      }
+    .reme{
+        margin: 0 5%;
+        font-size: 17px;
+    }
+    .mere{
+        margin: 0 10%;
+        font-size: 15px;
+    }
+        
+}
